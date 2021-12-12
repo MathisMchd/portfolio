@@ -17,11 +17,11 @@
 
 .title-section {
   text-align: center;
-  padding-top: 47px;
+  padding-top: 44px;
   padding-bottom: 44px;
 }
 .a-propos {
-  max-width: 70%;
+  max-width: 60%;
   padding-right: 20px;
   padding-left: 20px;
   margin: 0 auto;
@@ -30,6 +30,7 @@
 .experience {
   max-width: 90%;
   margin: 0 auto;
+  border-top: 1px solid var(--ash-blue);
 }
 
 /* ===== nav bar ===== */
@@ -42,17 +43,20 @@ nav {
   color: #f6f3ee;
   padding: 30px;
   background-color: var(--main-clr);
+
   /* box-shadow: 0px 0px 80px rgb(39, 53, 141),
   0px 0px 29.2013px rgba(39, 53, 141, 0.0292778),
   0px 0px 14.1767px rgba(39, 53, 141, 0.021578),
   0px 0px 6.94968px rgba(39, 53, 141, 0.0184521),
   0px 0px 2.74791px rgba(39, 53, 141, 0.0153621); */
 }
-nav img {
+/* nav img {
   cursor: pointer;
   width: 16px;
   height: 16px;
-}
+} */
+
+
 nav .right {
   font-weight: 300;
   padding-right: 10px;
@@ -83,15 +87,26 @@ nav .left ul a {
 .intro .content {
   display: flex;
   align-items: center;
-  padding-left: 30%;
+  padding-left: 15%;
   line-height: 50px;
 }
 
 
-/* ===== about me ===== */
+/* ===== À propos ===== */
 
+.a-propos .first-element,
+.a-propos .second-element {
+  padding-bottom: 30px;
+}
 
+.description h2 {
+  padding: 10px;
+}
 
+.description p {
+  line-height: 1.6;
+  padding: 8px;
+}
 
 /* ===== Experience ====== */
 
