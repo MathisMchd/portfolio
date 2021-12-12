@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -11,30 +13,91 @@
     --ash-blue: #c2c9cd;
 }
 
-main {
-    margin: 2rem;
+/* == section == */
+
+.title-section {
+  text-align: center;
+  padding-top: 47px;
+  padding-bottom: 44px;
+}
+.a-propos {
+  max-width: 70%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
 }
 
-nav {
-    display: flex;
-    background-color: var(--main-clr);
+.experience {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* ===== nav bar ===== */
+
+
+nav { 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #f6f3ee;
+  padding: 30px;
+  background-color: var(--main-clr);
+  /* box-shadow: 0px 0px 80px rgb(39, 53, 141),
+  0px 0px 29.2013px rgba(39, 53, 141, 0.0292778),
+  0px 0px 14.1767px rgba(39, 53, 141, 0.021578),
+  0px 0px 6.94968px rgba(39, 53, 141, 0.0184521),
+  0px 0px 2.74791px rgba(39, 53, 141, 0.0153621); */
 }
 nav img {
-    fill: #ffff;
-    width: 16px;
-    height: 16px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
 }
-
+nav .right {
+  font-weight: 300;
+  padding-right: 10px;
+}
 nav .left ul {
+  text-transform: uppercase;
   display: flex;
   list-style-type: none;
-  justify-content: end;
+  align-items: center;
+  gap: 50px;
 }
+
+nav .left ul a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+
+/* ===== Intro ===== */
+
+.intro .content {
+  height: 90vh;
+  background-image: url(../img/desk-bg.jpg);
+  background-size: cover;
+  color: #f6f3ee;
+}
+
+.intro .content {
+  display: flex;
+  align-items: center;
+  padding-left: 30%;
+  line-height: 50px;
+}
+
+
+/* ===== about me ===== */
+
+
+
+
 /* ===== Experience ====== */
 
-.experience .posts {
+.experience .content .posts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     column-gap: 24px;
     row-gap: 36px;
 }
@@ -87,8 +150,13 @@ nav .left ul {
 
   /* ==== Media ===== */
 
-  @media screen  and (min-width: 500px){
-    .blog-post .posts {
+  @media screen  and (min-width: 500px) {
+    .experience .content .posts {
       grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media screen and (max-width:800px) {
+    nav .left {
+      display: none;
     }
   }
