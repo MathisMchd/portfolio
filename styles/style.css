@@ -20,18 +20,7 @@
   padding-top: 44px;
   padding-bottom: 44px;
 }
-.a-propos {
-  max-width: 60%;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin: 0 auto;
-}
 
-.experience {
-  max-width: 90%;
-  margin: 0 auto;
-  border-top: 1px solid var(--ash-blue);
-}
 
 /* ===== nav bar ===== */
 
@@ -43,18 +32,8 @@ nav {
   color: #f6f3ee;
   padding: 30px;
   background-color: var(--main-clr);
-
-  /* box-shadow: 0px 0px 80px rgb(39, 53, 141),
-  0px 0px 29.2013px rgba(39, 53, 141, 0.0292778),
-  0px 0px 14.1767px rgba(39, 53, 141, 0.021578),
-  0px 0px 6.94968px rgba(39, 53, 141, 0.0184521),
-  0px 0px 2.74791px rgba(39, 53, 141, 0.0153621); */
 }
-/* nav img {
-  cursor: pointer;
-  width: 16px;
-  height: 16px;
-} */
+
 
 
 nav .right {
@@ -82,7 +61,11 @@ nav .left ul a {
   background-image: url(../img/desk-bg.jpg);
   background-size: cover;
   color: #f6f3ee;
+  overflow: hidden;
+  box-shadow:inset 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
+
 }
+
 
 .intro .content {
   display: flex;
@@ -93,6 +76,11 @@ nav .left ul a {
 
 
 /* ===== À propos ===== */
+.a-propos {
+  max-width: 60%;
+  padding: 50px 20px 50px 20px;
+  margin: 0 auto;
+}
 
 .a-propos .first-element,
 .a-propos .second-element {
@@ -109,6 +97,13 @@ nav .left ul a {
 }
 
 /* ===== Experience ====== */
+.experience {
+  max-width: 70%;
+  margin: 0 auto;
+  padding-bottom: 88px;
+  border-top: 1px solid var(--ash-blue);
+}
+
 
 .experience .content .posts {
     display: grid;
@@ -161,6 +156,27 @@ nav .left ul a {
     color: var(--bw-100);
   }
 
+
+
+
+/* ====== Footer ===== */
+footer {
+
+  background-color: var(--ash-blue);
+  padding: 120px 20px 120px 20px;
+  box-shadow: inset 0px -2px 10px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
 
 
   /* ==== Media ===== */
