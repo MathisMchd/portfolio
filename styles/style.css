@@ -11,6 +11,7 @@
     --silver-lake: #e0e0e0; 
     --pearl-sugar: #f6f3ee;
     --ash-blue: #c2c9cd;
+    --nav-focus: #272626;
 }
 
 /* == section == */
@@ -51,8 +52,16 @@ nav .left ul {
 nav .left ul a {
   text-decoration: none;
   color: #ffff;
+  transition: 350ms ease-in-out;
 }
 
+nav ul a:hover {
+  color: var(--nav-focus);
+}
+nav ul a:focus {
+  outline: none;
+  color: var(--nav-focus);
+}
 
 /* ===== Intro ===== */
 
@@ -62,8 +71,7 @@ nav .left ul a {
   background-size: cover;
   color: #f6f3ee;
   overflow: hidden;
-  box-shadow:inset 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
-
+  box-shadow:inset 0px 2px 10px rgba(0, 0, 0, 0.4) ;
 }
 
 
@@ -77,9 +85,10 @@ nav .left ul a {
 
 /* ===== À propos ===== */
 .a-propos {
-  max-width: 60%;
+  max-width: 80%;
   padding: 50px 20px 50px 20px;
   margin: 0 auto;
+  text-align: justify;
 }
 
 .a-propos .first-element,
@@ -98,7 +107,7 @@ nav .left ul a {
 
 /* ===== Experience ====== */
 .experience {
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 auto;
   padding-bottom: 88px;
   border-top: 1px solid var(--ash-blue);
@@ -106,10 +115,12 @@ nav .left ul a {
 
 
 .experience .content .posts {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: 24px;
-    row-gap: 36px;
+  margin: 0 auto;
+  max-width: 500px;
+  grid-template-columns: repeat(1, 1fr);
+  display: grid;
+  column-gap: 24px;
+  row-gap: 36px;
 }
 
 
@@ -124,6 +135,7 @@ nav .left ul a {
     border-radius: 28px;
     background: var(--bw-700);
     padding: 24px 24px 32px;
+    text-align: justify;
   }
   
   .card img {
@@ -154,6 +166,7 @@ nav .left ul a {
     font-weight: 400;
     line-height: 24px;
     color: var(--bw-100);
+    text-justify: inter-word;
   }
 
 
@@ -161,10 +174,9 @@ nav .left ul a {
 
 /* ====== Footer ===== */
 footer {
-
   background-color: var(--ash-blue);
   padding: 120px 20px 120px 20px;
-  box-shadow: inset 0px -2px 10px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px -2px 10px 1px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
 }
@@ -172,19 +184,30 @@ footer {
 footer a {
   text-decoration: none;
   color: black;
-  padding: 10px;
+  padding: 0.5em 1em;
   border: 1px solid black;
   font-size: 1.4em;
   text-transform: uppercase;
+  transition: 350ms ease-in-out;
+}
+
+footer a:hover {
+  /* color:var(--main-clr);
+  border: 1px solid var(--main-clr); */
+  transform: scale(1.1);
+}
+footer a:focus {
+  box-shadow: 5px 5px 5px ;
 }
 
 
   /* ==== Media ===== */
 
-  @media screen  and (min-width: 500px) {
+  @media screen  and (min-width: 1000px) {
     .experience .content .posts {
-      grid-template-columns: repeat(3, 1fr);
-    }
+      max-width: none;
+     grid-template-columns: repeat(3, 1fr);
+    } 
   }
   @media screen and (max-width:800px) {
     nav .left {
