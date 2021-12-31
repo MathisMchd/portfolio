@@ -42,7 +42,7 @@ html {
 
 .title-section {
   text-align: center;
-  padding: 60px;
+  padding: 60px 0 60px 0;
   font-weight: 800;
   font-size: 32px;
   line-height: 30px;
@@ -181,7 +181,6 @@ a:hover::before {
 }
 
 .description p {
-  line-height: 1.6;
   padding: 8px;
 }
 
@@ -319,6 +318,7 @@ footer a {
   font-size: 1.4em;
   text-transform: uppercase;
   transition: 125ms ease;
+  text-align: center;
 }
 
 footer a:hover {
@@ -351,5 +351,14 @@ footer a:focus {
     }
     .competence .content {
       flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width:400px){
+    .description p {
+      text-align:initial ;
+    }
+    progress {
+      width: 180px;
     }
   }
