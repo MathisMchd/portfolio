@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;800;900&display=swap" rel="stylesheet">
     <title>Portfolio - Michenaud Mathis</title>
 </head>
+
 <body>
     <nav>
         <div class="right">
@@ -20,7 +22,7 @@
             <ul class="nav_links">
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#a-propos">à propos</a></li>
-                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#experience">Expériences</a></li>
                 <li><a href="#">Me contacter</a></li>
             </ul>
         </div>
@@ -31,24 +33,25 @@
             <div class="content">
                 <h1>Michenaud Mathis<br>Etudiant en BUT Informatique</h1>
             </div>
+            <img src="./img/down-arrow.svg" alt="down arrow">
         </section>
 
         <!-- A propos -->
 
         <section id="a-propos" class="a-propos">
+            <h1 class="title-section border-top border-bottom">À propos de moi</h1>
             <div class="content">
-                <div class="head">
-                    <h1 class="title-section">À propos de moi</h1>
-                </div>
                 <div class="description">
                     <div class="first-element">
-                        <h2 class="my-name"><strong>Personnel</strong></h2>
-                        <p>
-                            Je m'appelle Mathis Michenaud, j'ai actuellement 18 ans et je suis étudiant en première année de BUT informatique à l'IUT de Nantes.
-                            Ce que j'aime le plus dans l'informatique et notamment dans le web c'est de pouvoir créer pas à pas un site web qui va pouvoir évoluer au fil du temps.
+                        <h2 class="title02"><strong>Personnel</strong></h2>
+                        <p class="paragraph">
+                            Je m'appelle Mathis Michenaud, j'ai actuellement 18 ans et je suis étudiant en première
+                            année de BUT informatique à l'IUT de Nantes.
+                            Ce que j'aime le plus dans l'informatique et notamment dans le web c'est de pouvoir créer
+                            pas à pas un site web qui va pouvoir évoluer au fil du temps.
                             Quelque que soit ce dernier, il est toujours sujet à l'amélioration !
-                        </p>
-                        <p>
+                        <br>
+                        <br>
                             Je suis passionné par les technologies mais pas seulement.
                             Dans la vie de tous les jours, je suis quelqu'un qui aime le sport, la musique en tout genre
                             mais aussi et surtout le sport automobile et la moto.
@@ -56,15 +59,70 @@
                         </p>
                     </div>
                     <div class="second-element">
-                        <h2 class="my-name"><strong>Professionnel</strong></h2>
-                        <p>
+                        <h2 class="title02"><strong>Professionnel</strong></h2>
+                        <p class="paragraph">
                             Pour ce qui est de mon futur, j'envisage deux posibilités.
                             À l'heure actuelle, je souhaiterai m'orienter dans le domaine du développement web.
-                            Cependant ce choix n'est pas définitif. En effet, je désir également explorer le 
+                            Cependant ce choix n'est pas définitif. En effet, je désir également explorer le
                             dommaine des applications mobiles sur lequel j'ai peu d'expérience.
-                         </p>
+                        </p>
                     </div>
-                    
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="competence grey-bg-section">
+            <div class="head">
+                <h1 class="title-section border-bottom border-top">Compétences</h1>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <div>
+                        <h3 class="">HTML 5</h3>
+                        <div class="bar-content">
+                            <progress class="progress-bar" max="100" value="90"></progress>
+                            <label class="">90%</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="">CSS</h3>
+                        <div class="bar-content">
+                            <progress class="progress-bar" max="100" value="80"></progress>
+                            <label class="">80%</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="">GO</h3>
+                        <div class="bar-content">
+                            <progress class="progress-bar" max="100" value="75"></progress>
+                            <label>70%</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div>
+                        <h3 class="">PYTHON</h3>
+                        <div class="bar-content">
+                            <progress class="progress-bar" max="100" value="90"></progress>
+                            <label>90%</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="">SQL</h3>
+                        <div class="bar-content">
+                            <progress class="progress-bar" max="100" value="80"></progress>
+                            <label>80%</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="">FIGMA</h3>
+                        <div class="bar-content">
+                            <progress class="progress-bar" max="100" value="90"></progress>
+                            <label>90%</label>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -73,42 +131,43 @@
         <!-- Experience -->
 
 
-                    <!-- ====== need to fix grid template ======= -->
-
 
 
         <section id="experience" class="experience">
             <div class="content">
                 <div class="head">
-                    <h1 class="title-section">Expérience</h1>
+                    <h1 class="title-section border-top border-bottom">Expériences</h1>
                 </div>
                 <div class="posts">
                     <div class="card">
                         <img src="img/maquette_figma.PNG" alt="aperçu d'une maquette figma">
-                        <h4 class="title-card">Ojito</h4>
-                        <p>Le but de ce projet était de créer un site a partir d'une maquette figma.</p>
-                        
+                        <h4 class="title-card title02">Ojito</h4>
+                        <p class="paragraph">Le but de ce projet était de créer un site à partir d'une maquette figma.</p>
+
                     </div>
                     <div class="card">
                         <img src="img/fac-medecine-moleculs.PNG" alt="aperçu d'un site web">
-                        <h4 class="title-card"> Learn Moleculs</h4>
-                        <p>Ce projet a été réalisé à la demande d'étudiants de la faculté de médecine de Nantes.
-                            Il permet aux étudiants de réviser les différentes molécules sous forme de question à choix multiple.
+                        <h4 class="title-card title02"> Learn Moleculs</h4>
+                        <p class="paragraph">Ce projet a été réalisé à la demande d'étudiants de la faculté de médecine de Nantes.
+                            Il permet aux étudiants de réviser les différentes molécules sous forme de question à choix
+                            multiple.
                             Il a été réalisé en collaboration avec un camarade de première année.</p>
                     </div>
-                    <div class="card" >
+                    <div class="card">
                         <a href="animate_title/animate_title.html" target="_/blank">
                             <img src="animate_title/images/animation_title_page.PNG" alt="aperçu d'un titre animé">
                         </a>
-                        <h4 class="title-card">Titre animé</h4>
-                        <p>Ce titre animé a été ma toute première expérience avec java script. Il m'a permis de me donner une première approche sur les animations CSS possibles.</p>
+                        <h4 class="title-card title02">Titre animé</h4>
+                        <p class="paragraph">Ce titre animé a été ma toute première expérience avec java script. Il m'a permis de me
+                            donner une première approche sur les animations CSS possibles.</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-       <a href="CV/cv.txt" download="CV_Michenaud_Mathis">Télécharger mon CV</a>
+    <footer class="blue-bg-section">
+        <a href="CV/cv.txt" download="CV_Michenaud_Mathis">Télécharger mon CV</a>
     </footer>
 </body>
+
 </html>
