@@ -104,19 +104,19 @@ nav .left ul {
   gap: 50px;
 }
 
-a {
+nav .left ul a {
   position: relative;
   color: #fff;
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
+nav .left ul a:hover,
+nav .left ul a:focus {
   outline: none;
   color: var(--nav-focus);
 }
 
-a::before {
+nav .left ul a::before {
   content: "";
   position: absolute;
   display: block;
@@ -129,7 +129,7 @@ a::before {
   transition: transform 0.4s ease;
 }
 
-a:hover::before {
+nav .left ul a:hover::before {
   transform: scaleX(1);
 }
 
